@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+  <div class="jumbotron">
+    <h1>GET A NEW PET</h1>
+  </div>
+</div>
+
+
+<h2>Here all your Pets:</h2><br><br>
+
+<ul>
+  @foreach (var pet in @Model["pets"])
+  {
+    <li><a href='/owners/@Model["owner"].GetId()/pets/@pet.GetId()'>@pet.GetBreed()</a></li>
+  }
+</ul><br><br>
+
+
+<p><a href='/owners/@Model["owner"].GetId()/pet/new'>Add a new Pet</a></p>
+<p><a href='/owners'>Return to Owners list</a></p>
+<p><a href='/'>Return to Main Page</a></p>

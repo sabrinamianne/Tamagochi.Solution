@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+<div class="container">
+  <div class="jumbotron">
+    <h1>ADD A NEW OWNER</h1>
+  </div>
+</div>
+
+<h3>Add your name here:</h3>
+
+<form action="/owners" method="post">
+  <label for="ownerName">Name</label>
+  <input id="ownerName" name="ownerName" type="text">
+  <button type="submit">Add an Owner</button><br><br>
+</form>
+
+<p><a href="/">Back home</a></p>
+<p><a href="/owners">Back to the list of Owners.</a></p>

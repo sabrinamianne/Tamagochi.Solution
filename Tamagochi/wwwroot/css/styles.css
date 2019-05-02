@@ -1,0 +1,29 @@
+body {
+  background-color: yellow;
+}
+
+a {
+  font-size: 30px;
+  font-family: Times,inherit;
+  color: black;
+}
+a:hover{
+  color: violet ;
+  text-decoration: underline;
+}
+
+a {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: #371368;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+}
+
+li {
+  font-size: 50px;
+  color: pink;
+}

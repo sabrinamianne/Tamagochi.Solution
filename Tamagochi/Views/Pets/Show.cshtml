@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>TAMAGOCHI PETS DETAILS: </h1>
+
+<h2>@Model["pet"].GetBreed()</h2>
+<h3>Owner: @Model["owner"].GetName()</h3><br><br>
+
+<h1>@Model["owner"].GetName() PLAY WITH YOUR @Model["pet"].GetBreed()</h1>
+@* <a href='/owners/@Model["owner"].GetId()/pets/new'>PLAY</a><br><br> *@
+<a href='/owners/@Model["owner"].GetId()/pets/new'>Add another Pet</a>
+<a href='/owners'>View all Owners</a>
